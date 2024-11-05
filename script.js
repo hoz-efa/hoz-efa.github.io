@@ -1403,6 +1403,16 @@ function openProjectModal(projectId) {
         document.getElementById('project-modal').classList.add('active');
         document.getElementById('modal-overlay').classList.add('active');
         document.body.classList.add('modal-active');
+
+        // Wait for the next rendering cycle before resetting scroll
+        setTimeout(() => {
+            // Identify the scrolling element
+            const modalContentElement = document.querySelector('.modal-content');
+            const scrollingElement = modalContentElement; // Or modalContentElement.firstElementChild
+
+            // Reset scroll position
+            scrollingElement.scrollTop = 0;
+        }, 0);
     }
 }
 
@@ -1418,6 +1428,16 @@ function openCertificationModal(certId) {
         document.getElementById('project-modal').classList.add('active');
         document.getElementById('modal-overlay').classList.add('active');
         document.body.classList.add('modal-active');
+
+        // Wait for the next rendering cycle before resetting scroll
+        setTimeout(() => {
+            // Identify the scrolling element
+            const modalContentElement = document.querySelector('.modal-content');
+            const scrollingElement = modalContentElement; // Or modalContentElement.firstElementChild
+
+            // Reset scroll position
+            scrollingElement.scrollTop = 0;
+        }, 0);
     }
 }
 
