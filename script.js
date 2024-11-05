@@ -1404,14 +1404,12 @@ function openProjectModal(projectId) {
         document.getElementById('modal-overlay').classList.add('active');
         document.body.classList.add('modal-active');
 
-        // Wait for the next rendering cycle before resetting scroll
+        // Reset scroll position after the modal is rendered
         setTimeout(() => {
-            // Identify the scrolling element
             const modalContentElement = document.querySelector('.modal-content');
-            const scrollingElement = modalContentElement; // Or modalContentElement.firstElementChild
-
-            // Reset scroll position
-            scrollingElement.scrollTop = 0;
+            if (modalContentElement) {
+                modalContentElement.scrollTop = 0;
+            }
         }, 0);
     }
 }
@@ -1429,14 +1427,12 @@ function openCertificationModal(certId) {
         document.getElementById('modal-overlay').classList.add('active');
         document.body.classList.add('modal-active');
 
-        // Wait for the next rendering cycle before resetting scroll
+        // Reset scroll position after the modal is rendered
         setTimeout(() => {
-            // Identify the scrolling element
             const modalContentElement = document.querySelector('.modal-content');
-            const scrollingElement = modalContentElement; // Or modalContentElement.firstElementChild
-
-            // Reset scroll position
-            scrollingElement.scrollTop = 0;
+            if (modalContentElement) {
+                modalContentElement.scrollTop = 0;
+            }
         }, 0);
     }
 }
