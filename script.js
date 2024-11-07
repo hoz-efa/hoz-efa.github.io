@@ -40,6 +40,7 @@ const content = {
                     <img src="assets/images/projects/p1/cybersecurity.jpg" alt="Enhancing Cybersecurity Resilience" style="width: 100%; height: auto; border-radius: 15px; aspect-ratio: 16 / 9; object-fit: cover;">
                     <h3>Enhancing Cybersecurity Resilience</h3>
                     <p>Advanced Data Analysis and Risk Management using AI & ML for Cybersecurity.</p>
+<p style="font-size: 70%; text-align: center;">Click to see project details</p>
                 </div>
                 <div class="project-card card" data-project-id="project2">
                     <img src="assets/images/projects/p2/sentiment_analysis.png" alt="Sentiment Analysis of Yelp Restaurant Reviews" style="width: 100%; height: auto; border-radius: 15px; aspect-ratio: 16 / 9; object-fit: cover;">
