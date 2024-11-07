@@ -40,27 +40,31 @@ const content = {
                     <img src="assets/images/projects/p1/cybersecurity.jpg" alt="Enhancing Cybersecurity Resilience" style="width: 100%; height: auto; border-radius: 15px; aspect-ratio: 16 / 9; object-fit: cover;">
                     <h3>Enhancing Cybersecurity Resilience</h3>
                     <p>Advanced Data Analysis and Risk Management using AI & ML for Cybersecurity.</p>
-<p style="font-size: 70%; text-align: center;">Click to see project details</p>
+<p style="font-size: 70%; text-align: center;">(Click to see project details)</p>
                 </div>
                 <div class="project-card card" data-project-id="project2">
                     <img src="assets/images/projects/p2/sentiment_analysis.png" alt="Sentiment Analysis of Yelp Restaurant Reviews" style="width: 100%; height: auto; border-radius: 15px; aspect-ratio: 16 / 9; object-fit: cover;">
                     <h3>Sentiment Analysis of Yelp Restaurant Reviews</h3>
                     <p>Comparing LSTM and DistilBERT models for analyzing customer reviews on Yelp.</p>
+<p style="font-size: 70%; text-align: center;">(Click to see project details)</p>
                 </div>
                 <div class="project-card card" data-project-id="project3">
                     <img src="assets/images/projects/p3/stock_recommendation.jpg" alt="Real-Time Stock Recommendation System" style="width: 100%; height: auto; border-radius: 15px; aspect-ratio: 16 / 9; object-fit: cover;">
                     <h3>Real-Time Stock Recommendation System</h3>
                     <p>Integrates sentiment analysis and machine learning to provide real-time stock buying, holding, or selling recommendations.</p>
+<p style="font-size: 70%; text-align: center;">(Click to see project details)</p>
                 </div>
                 <div class="project-card card" data-project-id="project4">
                     <img src="assets/images/projects/p4/news-sentiment.png" alt="News Sentiment Analysis with Spark" style="width: 100%; height: auto; border-radius: 15px; aspect-ratio: 16 / 9; object-fit: cover;">
                     <h3>News Sentiment Analysis with Spark</h3>
                     <p>Exploring media sentiment through advanced data streaming and processing with Apache Spark, Zookeeper, and Kafka.</p>
+<p style="font-size: 70%; text-align: center;">(Click to see project details)</p>
                 </div>
                 <div class="project-card card" data-project-id="project5">
                     <img src="assets/images/projects/p5/telegram-gdrive-bot.png" alt="Telegram Google Drive Bot" style="width: 100%; height: auto; border-radius: 15px; aspect-ratio: 16 / 9; object-fit: cover;">
                     <h3>Telegram Google Drive Bot</h3>
                     <p>Integrate and manage Google Drive through Telegram with advanced file management capabilities using the Google Drive API and Telegram Bot API.</p>
+<p style="font-size: 70%; text-align: center;">(Click to see project details)</p>
                 </div>
             </div>
         </section>
