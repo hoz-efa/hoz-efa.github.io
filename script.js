@@ -40,31 +40,37 @@ const content = {
                     <img src="assets/images/projects/p1/cybersecurity.jpg" alt="Enhancing Cybersecurity Resilience" style="width: 100%; height: auto; border-radius: 15px; aspect-ratio: 16 / 9; object-fit: cover;">
                     <h3>Enhancing Cybersecurity Resilience</h3>
                     <p>Advanced Data Analysis and Risk Management using AI & ML for Cybersecurity.</p>
-<p style="font-size: 70%; text-align: center;">(Click to see project details)</p>
-                </div>
-                <div class="project-card card" data-project-id="project2">
-                    <img src="assets/images/projects/p2/sentiment_analysis.png" alt="Sentiment Analysis of Yelp Restaurant Reviews" style="width: 100%; height: auto; border-radius: 15px; aspect-ratio: 16 / 9; object-fit: cover;">
-                    <h3>Sentiment Analysis of Yelp Restaurant Reviews</h3>
-                    <p>Comparing LSTM and DistilBERT models for analyzing customer reviews on Yelp.</p>
-<p style="font-size: 70%; text-align: center;">(Click to see project details)</p>
-                </div>
-                <div class="project-card card" data-project-id="project3">
-                    <img src="assets/images/projects/p3/stock_recommendation.jpg" alt="Real-Time Stock Recommendation System" style="width: 100%; height: auto; border-radius: 15px; aspect-ratio: 16 / 9; object-fit: cover;">
-                    <h3>Real-Time Stock Recommendation System</h3>
-                    <p>Integrates sentiment analysis and machine learning to provide real-time stock buying, holding, or selling recommendations.</p>
-<p style="font-size: 70%; text-align: center;">(Click to see project details)</p>
-                </div>
-                <div class="project-card card" data-project-id="project4">
-                    <img src="assets/images/projects/p4/news-sentiment.png" alt="News Sentiment Analysis with Spark" style="width: 100%; height: auto; border-radius: 15px; aspect-ratio: 16 / 9; object-fit: cover;">
-                    <h3>News Sentiment Analysis with Spark</h3>
-                    <p>Exploring media sentiment through advanced data streaming and processing with Apache Spark, Zookeeper, and Kafka.</p>
-<p style="font-size: 70%; text-align: center;">(Click to see project details)</p>
+                    <p style="font-size: 70%; text-align: center;">(Click to see project details)</p>
                 </div>
                 <div class="project-card card" data-project-id="project5">
                     <img src="assets/images/projects/p5/telegram-gdrive-bot.png" alt="Telegram Google Drive Bot" style="width: 100%; height: auto; border-radius: 15px; aspect-ratio: 16 / 9; object-fit: cover;">
                     <h3>Telegram Google Drive Bot</h3>
                     <p>Integrate and manage Google Drive through Telegram with advanced file management capabilities using the Google Drive API and Telegram Bot API.</p>
-<p style="font-size: 70%; text-align: center;">(Click to see project details)</p>
+                    <p style="font-size: 70%; text-align: center;">(Click to see project details)</p>
+                </div>
+                <div class="project-card card" data-project-id="project6">
+                    <img src="assets/images/projects/p6/insta-comment-bot.png" alt="Insta Comment Bot" style="width: 100%; height: auto; border-radius: 15px; aspect-ratio: 16 / 9; object-fit: cover;">
+                    <h3>Insta Comment Bot</h3>
+                    <p>An automated Python tool to post comments on Instagram posts from multiple accounts using Selenium, with hashtag scraping and human-like interaction to avoid detection.</p>
+                    <p style="font-size: 70%; text-align: center;">(Click to see project details)</p>
+                </div>
+                <div class="project-card card" data-project-id="project2">
+                    <img src="assets/images/projects/p2/sentiment_analysis.png" alt="Sentiment Analysis of Yelp Restaurant Reviews" style="width: 100%; height: auto; border-radius: 15px; aspect-ratio: 16 / 9; object-fit: cover;">
+                    <h3>Sentiment Analysis of Yelp Restaurant Reviews</h3>
+                    <p>Comparing LSTM and DistilBERT models for analyzing customer reviews on Yelp.</p>
+                    <p style="font-size: 70%; text-align: center;">(Click to see project details)</p>
+                </div>
+                <div class="project-card card" data-project-id="project3">
+                    <img src="assets/images/projects/p3/stock_recommendation.jpg" alt="Real-Time Stock Recommendation System" style="width: 100%; height: auto; border-radius: 15px; aspect-ratio: 16 / 9; object-fit: cover;">
+                    <h3>Real-Time Stock Recommendation System</h3>
+                    <p>Integrates sentiment analysis and machine learning to provide real-time stock buying, holding, or selling recommendations.</p>
+                    <p style="font-size: 70%; text-align: center;">(Click to see project details)</p>
+                </div>
+                <div class="project-card card" data-project-id="project4">
+                    <img src="assets/images/projects/p4/news-sentiment.png" alt="News Sentiment Analysis with Spark" style="width: 100%; height: auto; border-radius: 15px; aspect-ratio: 16 / 9; object-fit: cover;">
+                    <h3>News Sentiment Analysis with Spark</h3>
+                    <p>Exploring media sentiment through advanced data streaming and processing with Apache Spark, Zookeeper, and Kafka.</p>
+                    <p style="font-size: 70%; text-align: center;">(Click to see project details)</p>
                 </div>
             </div>
         </section>
@@ -920,6 +926,24 @@ const projectData = {
                 <li>Web portal implementation for user interaction.</li>
             </ul>
 
+            <h3>What the Website Does?</h3>
+            <p>This website serves as a comprehensive risk management tool, helping companies protect themselves from potential cybersecurity threats. It is part of a broader service offered by <strong>Technology Helps</strong>, which trains employees of various companies on cybersecurity measures, including identifying phishing links and handling malicious content.</p>
+            <p><strong>How It Works:</strong></p>
+            <ol>
+                <li>Companies enroll their employees in training programs to educate them on cybersecurity threats.</li>
+                <li>After the training, the service sends phishing and malicious links to employees as a test to assess their preparedness.</li>
+                <li>The results of these tests, including training completion rates and phishing click rates, are fed into the web portal.</li>
+                <li>The portal processes this data, evaluates the company's risk profile, and provides actionable recommendations to improve their cybersecurity measures.</li>
+                <li>The web portal also maintains a history of reports and progress for each company, enabling them to track improvement over time.</li>
+            </ol>
+            <p><strong>Usage:</strong> This service and web portal are particularly beneficial for companies that aim to:</p>
+            <ul>
+                <li>Ensure compliance with cybersecurity regulations.</li>
+                <li>Protect sensitive data from potential leaks or theft.</li>
+                <li>Measure and improve employee awareness and training effectiveness over time.</li>
+                <li>Receive actionable steps tailored to their specific vulnerabilities.</li>
+            </ul>
+
             <h3>Dataset Overview</h2>
             <p><strong>Source and Description:</strong></p>
             <ul>
@@ -1335,7 +1359,72 @@ const projectData = {
         technologies: ['Python', 'Telegram Bot API', 'Python-Telegram-Bot Wrapper', 'Google Drive API', 'Docker', 'Heroku'],
         liveLink: 'https://your-live-link.com',
         repoLink: 'https://github.com/your-github/Telegram-Google-Drive-Bot',
-    },    
+    },
+
+    project6: {  
+    title: 'Insta Comment Bot',  
+    image: 'assets/images/projects/p6/insta-comment-bot.png',  
+    description:`<h3>Introduction</h3>  
+                <p>The Insta Comment Bot is an automated tool designed to enhance marketing efforts on Instagram. It automates the process of commenting on posts from specific hashtags using multiple accounts, mimicking human behavior to avoid detection and improve engagement metrics. The bot is a Python-based solution leveraging Selenium for browser automation and includes robust error handling and activity logging for seamless operations.</p>  
+
+                <hr>  
+
+                <h3>Core Features</h3>  
+                <ul>  
+                    <li><strong>Multi-Account Support:</strong> Automates login and activity for multiple accounts.</li>  
+                    <li><strong>Hashtag Scraping:</strong> Targets posts from specific hashtags for maximum reach.</li>  
+                    <li><strong>Human-Like Interaction:</strong> Randomized delays and behaviors to mimic human activity.</li>  
+                    <li><strong>Headless Mode:</strong> Operates in the background without displaying browser windows.</li>  
+                    <li><strong>Error Handling:</strong> Gracefully handles login failures, restrictions, and exceptions.</li>  
+                    <li><strong>Logging:</strong> Maintains a log of activities, including posted comments and account statuses.</li>  
+                </ul>  
+
+                <hr>  
+
+                <h3>Setup and Configuration</h3>  
+                <ol>  
+                    <li>Clone the repository and install dependencies listed in the <code>requirements.txt</code>.</li>  
+                    <li>Update settings with Instagram accounts, hashtags, and comments.</li>  
+                    <li>Install ChromeDriver and place it in the appropriate directory for Selenium to function correctly.</li>  
+                </ol>  
+
+                <h3>Use Case</h3>  
+                <p>This bot is particularly useful for digital marketing and social media management. By automating comments on targeted posts, it helps businesses and influencers:  
+                <ul>  
+                    <li>Increase engagement rates by interacting with potential followers.</li>  
+                    <li>Promote brand awareness by targeting relevant hashtags.</li>  
+                    <li>Save time and resources by automating repetitive tasks.</li>  
+                </ul>  
+                </p>  
+
+                <hr>  
+
+                <h3>Planned Enhancements</h3>  
+                <ul>  
+                    <li>Emoji support for better comment customization.</li>  
+                    <li>Integration with Telegram for activity notifications.</li>  
+                    <li>Graphical User Interface (GUI) for easier bot management.</li>  
+                </ul>  
+
+                <hr>  
+
+                <h3>Security Considerations</h3>  
+                <p>The bot implements several measures to avoid Instagram's bot detection algorithms, such as randomized delays and activity patterns. However, users are advised to exercise caution as bot usage violates Instagram's terms of service and may lead to account restrictions.</p>  
+
+                <hr>
+
+                <h3>Repository Status</h3>  
+                <p><strong>Note:</strong> The repository for this project has not been made public. The decision was taken to ensure compliance with Instagram's terms of service, as this bot's automation capabilities might violate those terms. Making the repository public could lead to misuse or exploitation of the tool in ways that harm Instagram's ecosystem or violate ethical practices. This project is available only for demonstration and educational purposes upon request.</p>  
+                <img loading="lazy" src="assets/images/projects/p6/repoSS.png" alt="Repo Screenshot" style="display: block; margin: 0 auto; width: 60%; max-width: 100%; height: auto;">
+                <hr>
+
+                <h3>Conclusion</h3>  
+                <p>The Insta Comment Bot provides a scalable and efficient way to boost marketing efforts on Instagram, making it an invaluable tool for businesses and influencers aiming to improve their online presence.</p>`,  
+
+    technologies: ['Python', 'Selenium', 'Instagram API', 'ChromeDriver'],  
+    liveLink: '',  
+    repoLink: 'https://github.com/your-github/Insta-Comment-Bot',  
+    },
 };
 
 // Certification data
