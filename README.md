@@ -1,6 +1,7 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/hoz-efa/hoz-efa.github.io)
 ![GitHub stars](https://img.shields.io/github/stars/hoz-efa/hoz-efa.github.io?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/hoz-efa/hoz-efa.github.io?style=social)
+![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fhoz-efa%2Fhoz-efa.github.io%2F&label=Total%20Repo%20Visits&countColor=%23263759&style=flat)
 
 # Portfolio Website - Hozefa Patel
 
@@ -196,5 +197,3 @@ Feel free to reach out to me through any of the following channels:
 ---
 
 Thank you for visiting my portfolio website repository. If you have any suggestions or feedback, please feel free to open an issue or submit a pull request.
-
-![Total visitors](https://api.visitorbadge.io/api/VisitorHit?user=hoz-efa&repo=hoz-efa.github.io&countColor=%237B1E7A)
