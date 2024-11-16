@@ -3,7 +3,7 @@
 ![GitHub forks](https://img.shields.io/github/forks/hoz-efa/hoz-efa.github.io?style=social)
 ![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fhoz-efa%2Fhoz-efa.github.io%2F&label=Total%20Repo%20Visits&countColor=%23263759&style=flat)
 
-# Portfolio Website - Hozefa Patel
+# Portfolio Website
 
 Welcome to the repository for my personal portfolio website. This website showcases my projects, skills, education, and experience as a Big Data and AI Engineer. Built from scratch, it provides visitors with an interactive and dynamic platform to learn more about me and my work.
 
