@@ -49,7 +49,7 @@ const content = {
                     <p style="font-size: 70%; text-align: center;">(Click to see project details)</p>
                 </div>
                 <div class="project-card card" data-project-id="project6">
-                    <img src="assets/images/projects/p6/insta-comment-bot.png" alt="Insta Comment Bot" style="width: 100%; height: auto; border-radius: 15px; aspect-ratio: 16 / 9; object-fit: cover;">
+                    <img src="assets/images/projects/p6/Insta-Comment-Bot.png" alt="Insta Comment Bot" style="width: 100%; height: auto; border-radius: 15px; aspect-ratio: 16 / 9; object-fit: cover;">
                     <h3>Insta Comment Bot</h3>
                     <p>An automated Python tool to post comments on Instagram posts from multiple accounts using Selenium, with hashtag scraping and human-like interaction to avoid detection.</p>
                     <p style="font-size: 70%; text-align: center;">(Click to see project details)</p>
@@ -1363,7 +1363,7 @@ const projectData = {
 
     project6: {  
     title: 'Insta Comment Bot',  
-    image: 'assets/images/projects/p6/insta-comment-bot.png',  
+    image: 'assets/images/projects/p6/Insta-Comment-Bot.png',  
     description:`<h3>Introduction</h3>  
                 <p>The Insta Comment Bot is an automated tool designed to enhance marketing efforts on Instagram. It automates the process of commenting on posts from specific hashtags using multiple accounts, mimicking human behavior to avoid detection and improve engagement metrics. The bot is a Python-based solution leveraging Selenium for browser automation and includes robust error handling and activity logging for seamless operations.</p>  
 
