@@ -1415,7 +1415,7 @@ const projectData = {
 
                 <h3>Repository Status</h3>  
                 <p><strong>Note:</strong> The repository for this project has not been made public. The decision was taken to ensure compliance with Instagram's terms of service, as this bot's automation capabilities might violate those terms. Making the repository public could lead to misuse or exploitation of the tool in ways that harm Instagram's ecosystem or violate ethical practices. This project is available only for demonstration and educational purposes upon request.</p>  
-                <img loading="lazy" src="assets/images/projects/p6/repoSS.png" alt="Repo Screenshot" style="display: block; margin: 0 auto; width: 60%; max-width: 100%; height: auto;">
+                <img loading="lazy" src="assets/images/projects/p6/repoSS.png" alt="Repo Screenshot" style="display: block; margin: 0 auto; width: 100%; max-width: 100%; height: auto;">
                 <hr>
 
                 <h3>Conclusion</h3>  
