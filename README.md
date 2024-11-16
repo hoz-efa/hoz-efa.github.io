@@ -1,6 +1,20 @@
+![GitHub repo size](https://img.shields.io/github/repo-size/hoz-efa/hoz-efa.github.io)
+![GitHub stars](https://img.shields.io/github/stars/hoz-efa/hoz-efa.github.io?style=social)
+![GitHub forks](https://img.shields.io/github/forks/hoz-efa/hoz-efa.github.io?style=social)
+
 # Portfolio Website - Hozefa Patel
 
-Welcome to the repository for my personal portfolio website. This website is a showcase of my projects, skills, education, and experience as a Big Data and AI Engineer. Built from scratch, it provides an interactive and dynamic platform for visitors to learn more about me and my work.
+Welcome to the repository for my personal portfolio website. This website showcases my projects, skills, education, and experience as a Big Data and AI Engineer. Built from scratch, it provides visitors with an interactive and dynamic platform to learn more about me and my work.
+
+---
+
+## Live Demo
+
+Check out the live demo of the website:
+
+🔗 **[hoz-efa.github.io](https://hoz-efa.github.io)**
+
+---
 
 ## Table of Contents
 
@@ -28,7 +42,7 @@ Welcome to the repository for my personal portfolio website. This website is a s
 
 - **Skills Overview**: Displays my technical and professional skills categorized for easy navigation.
 
-- **Contact Form**: Features a contact form powered by [Web3Forms](https://web3forms.com/) for users to send me messages directly from the website.
+- **Contact Form**: This features a contact form powered by [Web3Forms](https://web3forms.com/) that allows users to send me messages directly from the website.
 
 - **Social Media Integration**: Includes links to my GitHub, LinkedIn, WhatsApp, and Telegram profiles for easy connection.
 
@@ -37,7 +51,6 @@ Welcome to the repository for my personal portfolio website. This website is a s
 ---
 
 ## Technologies Used
-
 - **Frontend**:
   - HTML5
   - CSS3
@@ -77,7 +90,7 @@ To run this project locally, follow these steps:
    ```
 
 3. **Open `index.html` in Your Browser**:
-   - You can simply open the `index.html` file in your preferred web browser.
+   - You can open the `index.html` file in your preferred web browser.
    - Alternatively, you can use a local web server for a better experience:
      ```bash
      # For Python 3.x
@@ -94,7 +107,7 @@ To run this project locally, follow these steps:
   - Clicking on these links dynamically loads the content in the main content area without reloading the page.
 
 - **Theme Toggle**:
-  - Click the theme toggle button (sun and moon icon) in the sidebar to switch between light and dark modes.
+  - Click the sidebar's theme toggle button (sun and moon icon) to switch between light and dark modes.
   - The selected theme is saved and applied on subsequent visits.
 
 - **Viewing Projects**:
@@ -142,7 +155,7 @@ portfolio-website/
 │   ├── Hozefa Patel - Resume.pdf
 ```
 
-- **index.html**: The main HTML file containing the structure of the webpage, including the sidebar, navigation, and main content area.
+- **index.html**: The main HTML file containing the webpage's structure, including the sidebar, navigation, and main content area.
 - **style.css**: Contains all the styles for the website, including responsive design, theming, and animations.
 - **script.js**: Handles dynamic content loading, theme toggling, modal functionality, form submission, and other interactive features.
 - **assets/**: Contains images for the profile picture, projects, certifications, and other media, as well as the resume PDF.
@@ -155,12 +168,14 @@ portfolio-website/
 - **Project Images**: Relevant images representing each project.
 - **Icons**:
   - SVG icons for social media links sourced and customized.
-  - Theme toggle icon inspired by common sun and moon designs.
+  - Theme toggle icon inspired by the common sun and moon designs.
 - **Fonts**: [Google Fonts - Poppins](https://fonts.google.com/specimen/Poppins)
 - **Libraries**:
   - [Plotly.js](https://plotly.com/javascript/) for data visualization in project modals.
   - [Web3Forms](https://web3forms.com/) for contact form handling.
 - **Inspiration**: Design inspired by modern portfolio websites emphasizing simplicity and usability.
+  - [Angel Martínez's Portfolio](https://github.com/angelmtztrc/portfolio): Inspired by the clean design and user experience.
+  - [VCard Personal Portfolio by CodeWithSadee](https://github.com/codewithsadee/vcard-personal-portfolio): Also, found this repository (after I made everything 😢) with a similar design.
 
 ---
 
@@ -181,3 +196,5 @@ Feel free to reach out to me through any of the following channels:
 ---
 
 Thank you for visiting my portfolio website repository. If you have any suggestions or feedback, please feel free to open an issue or submit a pull request.
+
+![Total visitors](https://api.visitorbadge.io/api/VisitorHit?user=hoz-efa&repo=hoz-efa.github.io&countColor=%237B1E7A)
