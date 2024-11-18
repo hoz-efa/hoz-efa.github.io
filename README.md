@@ -15,6 +15,9 @@ Check out the live demo of the website:
 
 🔗 **[hoz-efa.github.io](https://hoz-efa.github.io)**
 
+![Mobile Demo](./assets/images/mobile-view.jpg "Mobile Demo")
+![Desktop Demo](./assets/images/desktop-view.jpg "Desktop Demo")
+
 ---
 
 ## Table of Contents
