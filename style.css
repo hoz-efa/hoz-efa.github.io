@@ -1023,3 +1023,70 @@ content: "";
 display: inline-block;
 background-size: contain;
 }
+
+/* Footer Styles */
+.footer {
+    background-color: var(--card-bg-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    border-top: 1px solid var(--card-shadow);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+.footer a {
+    color: var(--primary-color);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-icon {
+    width: 20px;
+    height: 20px;
+    fill: var(--icon-fill);
+    margin-right: 8px;
+}
+
+/* Styles for devices between 768px and 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Ensure the footer is styled appropriately */
+    .footer {
+        padding: 20px;
+    }
+
+    .footer-content p {
+        font-size: 0.9rem;
+    }
+
+    /* Adjust other elements if necessary */
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .main-content-area {
+        width: 100%;
+        margin-left: 0;
+        padding: 0;
+        max-width: 800px;
+        padding: 20px 0;
+    }
+}
