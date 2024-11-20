@@ -34,44 +34,17 @@ function onClick() {
 const content = {
     projects: `
         <section id="projects" class="content-section">
-            <h2>Self-Learning Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card card" data-project-id="project1">
-                    <img src="assets/images/projects/p1/cybersecurity.jpg" alt="Enhancing Cybersecurity Resilience" style="width: 100%; height: auto; border-radius: 15px; aspect-ratio: 16 / 9; object-fit: cover;">
-                    <h3>Enhancing Cybersecurity Resilience</h3>
-                    <p>Advanced Data Analysis and Risk Management using AI & ML for Cybersecurity.</p>
-                    <p style="font-size: 70%; text-align: center;">(Click to see project details)</p>
-                </div>
-                <div class="project-card card" data-project-id="project5">
-                    <img src="assets/images/projects/p5/telegram-gdrive-bot.png" alt="Telegram Google Drive Bot" style="width: 100%; height: auto; border-radius: 15px; aspect-ratio: 16 / 9; object-fit: cover;">
-                    <h3>Telegram Google Drive Bot</h3>
-                    <p>Integrate and manage Google Drive through Telegram with advanced file management capabilities using the Google Drive API and Telegram Bot API.</p>
-                    <p style="font-size: 70%; text-align: center;">(Click to see project details)</p>
-                </div>
-                <div class="project-card card" data-project-id="project6">
-                    <img src="assets/images/projects/p6/Insta-Comment-Bot.png" alt="Insta Comment Bot" style="width: 100%; height: auto; border-radius: 15px; aspect-ratio: 16 / 9; object-fit: cover;">
-                    <h3>Insta Comment Bot</h3>
-                    <p>An automated Python tool to post comments on Instagram posts from multiple accounts using Selenium, with hashtag scraping and human-like interaction to avoid detection.</p>
-                    <p style="font-size: 70%; text-align: center;">(Click to see project details)</p>
-                </div>
-                <div class="project-card card" data-project-id="project2">
-                    <img src="assets/images/projects/p2/sentiment_analysis.png" alt="Sentiment Analysis of Yelp Restaurant Reviews" style="width: 100%; height: auto; border-radius: 15px; aspect-ratio: 16 / 9; object-fit: cover;">
-                    <h3>Sentiment Analysis of Yelp Restaurant Reviews</h3>
-                    <p>Comparing LSTM and DistilBERT models for analyzing customer reviews on Yelp.</p>
-                    <p style="font-size: 70%; text-align: center;">(Click to see project details)</p>
-                </div>
-                <div class="project-card card" data-project-id="project3">
-                    <img src="assets/images/projects/p3/stock_recommendation.jpg" alt="Real-Time Stock Recommendation System" style="width: 100%; height: auto; border-radius: 15px; aspect-ratio: 16 / 9; object-fit: cover;">
-                    <h3>Real-Time Stock Recommendation System</h3>
-                    <p>Integrates sentiment analysis and machine learning to provide real-time stock buying, holding, or selling recommendations.</p>
-                    <p style="font-size: 70%; text-align: center;">(Click to see project details)</p>
-                </div>
-                <div class="project-card card" data-project-id="project4">
-                    <img src="assets/images/projects/p4/news-sentiment.png" alt="News Sentiment Analysis with Spark" style="width: 100%; height: auto; border-radius: 15px; aspect-ratio: 16 / 9; object-fit: cover;">
-                    <h3>News Sentiment Analysis with Spark</h3>
-                    <p>Exploring media sentiment through advanced data streaming and processing with Apache Spark, Zookeeper, and Kafka.</p>
-                    <p style="font-size: 70%; text-align: center;">(Click to see project details)</p>
-                </div>
+            <!-- <h2>Self-Learning Projects</h2> -->
+            <div id="project-categories" class="project-categories">
+            <!-- Category buttons will go here -->
+            </div>
+            <div class="projects-grid" id="projects-grid">
+                <div class="project-card card" data-project-id="project1"></div>
+                <div class="project-card card" data-project-id="project5"></div>
+                <div class="project-card card" data-project-id="project6"></div>
+                <div class="project-card card" data-project-id="project2"></div>
+                <div class="project-card card" data-project-id="project3"></div>
+                <div class="project-card card" data-project-id="project4"></div>
             </div>
         </section>
     `,
@@ -908,8 +881,9 @@ const content = {
 // Project data
 const projectData = {
     project1: {
-        title: 'Enhancing Cybersecurity Resilience through Advanced Data Analysis and Risk Management',
+        title: 'Enhancing Cybersecurity Resilience',
         image: 'assets/images/projects/p1/cybersecurity.jpg',
+        shortDescription: 'Advanced Data Analysis and Risk Management using AI & ML for Cybersecurity.',
         description: `
             <h3>Introduction and Overview</h2>
             <p>This project was developed for <a class="my-link" href="https://technologyhelps.org/" target="_blank">Technology Helps</a>.</p>
@@ -1045,10 +1019,12 @@ const projectData = {
         technologies: ['Python', 'Flask', 'SQLAlchemy', 'JavaScript', 'HTML', 'CSS', 'Plotly'],
         liveLink: 'https://your-live-link.com',
         repoLink: 'https://your-repository-link.com',
+        categories: ['AI/ML', 'Data Analytics'],
     },
     project2: {
         title: 'Sentiment Analysis of Yelp Restaurant Reviews',
         image: 'assets/images/projects/p2/sentiment_analysis.png',
+        shortDescription: 'Comparing LSTM and DistilBERT models for analyzing customer reviews on Yelp.',
         description: `
         <h3>Objective</h3>
         <p>To perform sentiment analysis on Yelp restaurant reviews using LSTM and DistilBERT models.</p>
@@ -1118,10 +1094,12 @@ const projectData = {
         technologies: ['Python', 'Pandas', 'NumPy', 'Matplotlib', 'Seaborn', 'NLTK', 'TensorFlow', 'Keras', 'Scikit-learn'],
         liveLink: '#',
         repoLink: '#',
+        categories: ['AI/ML', 'Data Analytics'],
     },
     project3: {
         title: 'Real-Time Stock Recommendation System',
         image: 'assets/images/projects/p3/stock_recommendation.jpg',
+        shortDescription: 'Integrates sentiment analysis and machine learning to provide real-time stock buying, holding, or selling recommendations.',
         description: `
             <h3>Objective</h3>
             <p>To develop a system that provides buy, hold, or sell recommendations for stocks based on an analysis of financial news articles, company financial reports, and historical stock price data. The system leverages Natural Language Processing (NLP) for sentiment analysis and Long Short-Term Memory (LSTM) networks for time series prediction.</p>
@@ -1163,11 +1141,13 @@ const projectData = {
         technologies: ['Python', 'Pandas', 'NumPy', 'Scikit-learn', 'NLTK', 'TensorFlow', 'Keras', 'TextBlob', 'yfinance', 'Requests', 'BeautifulSoup', 'XGBoost', 'LightGBM'],
         liveLink: 'https://your-live-link.com',
         repoLink: 'https://github.com/hoz-efa/Real-Time-Stock-Recommendation-System',
+        categories: ['AI/ML', 'Data Analytics'],
     },
 
     project4: {
         title: 'News Sentiment Analysis with Spark',
         image: 'assets/images/projects/p4/news-sentiment.png',
+        shortDescription: 'Exploring media sentiment through advanced data streaming and processing with Apache Spark, Zookeeper, and Kafka.',
         description: 
             `<h3>Introduction and Overview</h3>
             <p>Welcome to my project on sentiment analysis of news articles using Apache Spark. This project applies advanced data processing techniques and machine learning to determine underlying sentiments in news content, showcasing the powerful capabilities of big data technologies.</p>
@@ -1202,11 +1182,13 @@ const projectData = {
         technologies: ['Apache Spark', 'Zookeeper', 'Kafka', 'Machine Learning'],
         liveLink: 'https://your-live-link.com',
         repoLink: 'https://github.com/hoz-efa/News-Sentiment-Analysis-with-Spark',
+        categories: ['Data Analytics', 'Big Data'],
     },
 
     project5: {
         title: 'Telegram Google Drive Bot',
         image: 'assets/images/projects/p5/telegram-gdrive-bot.png',
+        shortDescription: 'Integrate and manage Google Drive through Telegram with advanced file management capabilities using the Google Drive API and Telegram Bot API.',
         description:
             `<h3>Introduction</h3>
             <p>The Telegram Google Drive Bot is a powerful tool designed to facilitate interaction with Google Drive directly from Telegram. It enables users to search for files across multiple Team Drives, clone files and folders, and manage user permissions seamlessly. By leveraging the Google Drive API and the Telegram Bot API, this bot provides a convenient interface for managing Google Drive resources without leaving the Telegram app.</p>
@@ -1359,71 +1341,74 @@ const projectData = {
         technologies: ['Python', 'Telegram Bot API', 'Python-Telegram-Bot Wrapper', 'Google Drive API', 'Docker', 'Heroku'],
         liveLink: 'https://your-live-link.com',
         repoLink: 'https://github.com/your-github/Telegram-Google-Drive-Bot',
+        categories: ['Automation'],
     },
 
     project6: {  
-    title: 'Insta Comment Bot',  
-    image: 'assets/images/projects/p6/Insta-Comment-Bot.png',  
-    description:`<h3>Introduction</h3>  
-                <p>The Insta Comment Bot is an automated tool designed to enhance marketing efforts on Instagram. It automates the process of commenting on posts from specific hashtags using multiple accounts, mimicking human behavior to avoid detection and improve engagement metrics. The bot is a Python-based solution leveraging Selenium for browser automation and includes robust error handling and activity logging for seamless operations.</p>  
+        title: 'Insta Comment Bot',  
+        image: 'assets/images/projects/p6/Insta-Comment-Bot.png',  
+        shortDescription: 'An automated Python tool to post comments on Instagram posts from multiple accounts using Selenium, with hashtag scraping and human-like interaction to avoid detection.',
+        description:`<h3>Introduction</h3>  
+                    <p>The Insta Comment Bot is an automated tool designed to enhance marketing efforts on Instagram. It automates the process of commenting on posts from specific hashtags using multiple accounts, mimicking human behavior to avoid detection and improve engagement metrics. The bot is a Python-based solution leveraging Selenium for browser automation and includes robust error handling and activity logging for seamless operations.</p>  
 
-                <hr>  
+                    <hr>  
 
-                <h3>Core Features</h3>  
-                <ul>  
-                    <li><strong>Multi-Account Support:</strong> Automates login and activity for multiple accounts.</li>  
-                    <li><strong>Hashtag Scraping:</strong> Targets posts from specific hashtags for maximum reach.</li>  
-                    <li><strong>Human-Like Interaction:</strong> Randomized delays and behaviors to mimic human activity.</li>  
-                    <li><strong>Headless Mode:</strong> Operates in the background without displaying browser windows.</li>  
-                    <li><strong>Error Handling:</strong> Gracefully handles login failures, restrictions, and exceptions.</li>  
-                    <li><strong>Logging:</strong> Maintains a log of activities, including posted comments and account statuses.</li>  
-                </ul>  
+                    <h3>Core Features</h3>  
+                    <ul>  
+                        <li><strong>Multi-Account Support:</strong> Automates login and activity for multiple accounts.</li>  
+                        <li><strong>Hashtag Scraping:</strong> Targets posts from specific hashtags for maximum reach.</li>  
+                        <li><strong>Human-Like Interaction:</strong> Randomized delays and behaviors to mimic human activity.</li>  
+                        <li><strong>Headless Mode:</strong> Operates in the background without displaying browser windows.</li>  
+                        <li><strong>Error Handling:</strong> Gracefully handles login failures, restrictions, and exceptions.</li>  
+                        <li><strong>Logging:</strong> Maintains a log of activities, including posted comments and account statuses.</li>  
+                    </ul>  
 
-                <hr>  
+                    <hr>  
 
-                <h3>Setup and Configuration</h3>  
-                <ol>  
-                    <li>Clone the repository and install dependencies listed in the <code>requirements.txt</code>.</li>  
-                    <li>Update settings with Instagram accounts, hashtags, and comments.</li>  
-                    <li>Install ChromeDriver and place it in the appropriate directory for Selenium to function correctly.</li>  
-                </ol>  
+                    <h3>Setup and Configuration</h3>  
+                    <ol>  
+                        <li>Clone the repository and install dependencies listed in the <code>requirements.txt</code>.</li>  
+                        <li>Update settings with Instagram accounts, hashtags, and comments.</li>  
+                        <li>Install ChromeDriver and place it in the appropriate directory for Selenium to function correctly.</li>  
+                    </ol>  
 
-                <h3>Use Case</h3>  
-                <p>This bot is particularly useful for digital marketing and social media management. By automating comments on targeted posts, it helps businesses and influencers:  
-                <ul>  
-                    <li>Increase engagement rates by interacting with potential followers.</li>  
-                    <li>Promote brand awareness by targeting relevant hashtags.</li>  
-                    <li>Save time and resources by automating repetitive tasks.</li>  
-                </ul>  
-                </p>  
+                    <h3>Use Case</h3>  
+                    <p>This bot is particularly useful for digital marketing and social media management. By automating comments on targeted posts, it helps businesses and influencers:  
+                    <ul>  
+                        <li>Increase engagement rates by interacting with potential followers.</li>  
+                        <li>Promote brand awareness by targeting relevant hashtags.</li>  
+                        <li>Save time and resources by automating repetitive tasks.</li>  
+                    </ul>  
+                    </p>  
 
-                <hr>  
+                    <hr>  
 
-                <h3>Planned Enhancements</h3>  
-                <ul>  
-                    <li>Emoji support for better comment customization.</li>  
-                    <li>Integration with Telegram for activity notifications.</li>  
-                    <li>Graphical User Interface (GUI) for easier bot management.</li>  
-                </ul>  
+                    <h3>Planned Enhancements</h3>  
+                    <ul>  
+                        <li>Emoji support for better comment customization.</li>  
+                        <li>Integration with Telegram for activity notifications.</li>  
+                        <li>Graphical User Interface (GUI) for easier bot management.</li>  
+                    </ul>  
 
-                <hr>  
+                    <hr>  
 
-                <h3>Security Considerations</h3>  
-                <p>The bot implements several measures to avoid Instagram's bot detection algorithms, such as randomized delays and activity patterns. However, users are advised to exercise caution as bot usage violates Instagram's terms of service and may lead to account restrictions.</p>  
+                    <h3>Security Considerations</h3>  
+                    <p>The bot implements several measures to avoid Instagram's bot detection algorithms, such as randomized delays and activity patterns. However, users are advised to exercise caution as bot usage violates Instagram's terms of service and may lead to account restrictions.</p>  
 
-                <hr>
+                    <hr>
 
-                <h3>Repository Status</h3>  
-                <p><strong>Note:</strong> The repository for this project has not been made public. The decision was taken to ensure compliance with Instagram's terms of service, as this bot's automation capabilities might violate those terms. Making the repository public could lead to misuse or exploitation of the tool in ways that harm Instagram's ecosystem or violate ethical practices. This project is available only for demonstration and educational purposes upon request.</p>  
-                <img loading="lazy" src="assets/images/projects/p6/repoSS.png" alt="Repo Screenshot" style="display: block; margin: 0 auto; width: 100%; max-width: 100%; height: auto;">
-                <hr>
+                    <h3>Repository Status</h3>  
+                    <p><strong>Note:</strong> The repository for this project has not been made public. The decision was taken to ensure compliance with Instagram's terms of service, as this bot's automation capabilities might violate those terms. Making the repository public could lead to misuse or exploitation of the tool in ways that harm Instagram's ecosystem or violate ethical practices. This project is available only for demonstration and educational purposes upon request.</p>  
+                    <img loading="lazy" src="assets/images/projects/p6/repoSS.png" alt="Repo Screenshot" style="display: block; margin: 0 auto; width: 100%; max-width: 100%; height: auto;">
+                    <hr>
 
-                <h3>Conclusion</h3>  
-                <p>The Insta Comment Bot provides a scalable and efficient way to boost marketing efforts on Instagram, making it an invaluable tool for businesses and influencers aiming to improve their online presence.</p>`,  
+                    <h3>Conclusion</h3>  
+                    <p>The Insta Comment Bot provides a scalable and efficient way to boost marketing efforts on Instagram, making it an invaluable tool for businesses and influencers aiming to improve their online presence.</p>`,  
 
-    technologies: ['Python', 'Selenium', 'Instagram API', 'ChromeDriver'],  
-    liveLink: '',  
-    repoLink: 'https://github.com/your-github/Insta-Comment-Bot',  
+        technologies: ['Python', 'Selenium', 'Instagram API', 'ChromeDriver'],  
+        liveLink: '',  
+        repoLink: 'https://github.com/your-github/Insta-Comment-Bot',
+        categories: ['Automation', 'Mini Projects'],
     },
 };
 
@@ -1632,9 +1617,8 @@ window.onload = function () {
                 setupContactForm();
             }
 
-            // Re-initialize project modal functionality when loading projects
             if (section === 'projects') {
-                initializeProjectCards();
+                initializeProjectsSection();
             }
 
             // Initialize certifications when loading experience section
@@ -1654,8 +1638,8 @@ window.onload = function () {
     // Initially load "Projects" section
     document.getElementById('main-content').innerHTML = content['projects'];
 
-    // Initialize project modal functionality
-    initializeProjectCards();
+    // Initialize projects section
+    initializeProjectsSection();
 };
 
 // Function to initialize project card click events
@@ -1666,6 +1650,23 @@ function initializeProjectCards() {
             openProjectModal(projectId);
         });
     });
+}
+
+function setGridColumns() {
+    const projectsGrid = document.getElementById('projects-grid');
+    if (projectsGrid) {
+        // Get the width of the grid container
+        const gridWidth = projectsGrid.offsetWidth;
+        // Get the width of a single project card (assuming they are all the same)
+        const card = projectsGrid.querySelector('.project-card');
+        if (card) {
+            const cardWidth = card.offsetWidth + 20; // Add gap width (20px)
+            // Calculate the number of columns that fit
+            const columns = Math.floor(gridWidth / cardWidth);
+            // Set the CSS variable
+            projectsGrid.style.setProperty('--columns', columns);
+        }
+    }
 }
 
 // Function to initialize certification card click events
@@ -1708,6 +1709,92 @@ document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape' && document.body.classList.contains('modal-active')) {
         closeProjectModal();
     }
+});
+
+function getAllCategories() {
+    const categories = new Set();
+    categories.add('All'); // Include 'All' category
+    for (const projectId in projectData) {
+        const project = projectData[projectId];
+        if (project.categories) {
+            project.categories.forEach(category => categories.add(category));
+        }
+    }
+    return Array.from(categories);
+}
+
+function renderCategoryButtons() {
+    const categories = getAllCategories();
+    const categoriesContainer = document.getElementById('project-categories');
+    categoriesContainer.innerHTML = categories.map(category => `
+        <button class="category-button" data-category="${category}">${category}</button>
+    `).join('');
+    
+    // Add event listeners to category buttons
+    document.querySelectorAll('.category-button').forEach(button => {
+        button.addEventListener('click', function() {
+            const selectedCategory = this.getAttribute('data-category');
+            // Remove 'active' class from all buttons
+            document.querySelectorAll('.category-button').forEach(btn => btn.classList.remove('active'));
+            // Add 'active' class to the clicked button
+            this.classList.add('active');
+            // Render projects based on selected category
+            renderProjects(selectedCategory);
+        });
+    });
+}
+
+function renderProjects(category) {
+    const projectsGrid = document.getElementById('projects-grid');
+    let projectsToDisplay = [];
+
+    if (category === 'All') {
+        projectsToDisplay = Object.keys(projectData);
+    } else {
+        projectsToDisplay = Object.keys(projectData).filter(projectId => {
+            const project = projectData[projectId];
+            return project.categories && project.categories.includes(category);
+        });
+    }
+
+    projectsGrid.innerHTML = projectsToDisplay.map(projectId => {
+        const project = projectData[projectId];
+        return `
+            <div class="project-card card" data-project-id="${projectId}">
+                <img src="${project.image}" alt="${project.title}" style="width: 100%; height: auto; border-radius: 15px; aspect-ratio: 16 / 9; object-fit: cover;">
+                <h3>${project.title}</h3>
+                <p>${project.shortDescription}</p>
+                <p style="font-size: 70%; text-align: center;">(Click to see project details)</p>
+            </div>
+        `;
+    }).join('');
+
+    // Re-initialize project card click events
+    initializeProjectCards();
+
+    // Set the grid columns based on current layout
+    setTimeout(setGridColumns, 0);
+}
+
+function initializeProjectsSection() {
+    // Render category buttons
+    renderCategoryButtons();
+
+    // By default, select 'All' category
+    const defaultCategoryButton = document.querySelector('.category-button[data-category="All"]');
+    if (defaultCategoryButton) {
+        defaultCategoryButton.classList.add('active');
+    }
+
+    // Render projects for 'All' category
+    renderProjects('All');
+
+    // Set the grid columns based on initial load
+    setTimeout(setGridColumns, 0);
+}
+
+window.addEventListener('resize', function() {
+    setGridColumns();
 });
 
 // Sync with system changes (Theme switching logic)
