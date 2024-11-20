@@ -36,9 +36,13 @@ Check out the live demo of the website:
 
 - **Responsive Design**: The website is fully responsive and adapts to various screen sizes, providing an optimal viewing experience on desktops, tablets, and mobile devices.
 
+- **Consistent Project Card Layout**: Implemented an enhanced projects grid that maintains consistent card sizes and layout, regardless of the number of projects displayed. This ensures a uniform and professional appearance when filtering projects by category on all devices.
+
 - **Dynamic Content Loading**: Uses JavaScript to dynamically load content for different sections like Projects, Education, Experience, Skills, and Contact without reloading the page.
 
 - **Theme Toggle**: Includes a light/dark theme toggle button, allowing users to switch between light and dark modes. The theme preference is stored in `localStorage`.
+
+- **Project Categorization and Filtering**: Allows visitors to filter projects by categories using intuitive buttons. This dynamic filtering ensures users can easily find projects of interest, and the projects grid maintains consistent card sizes and layout regardless of the number of projects displayed.
 
 - **Interactive Projects Section**: Showcases my self-learning projects with detailed descriptions, images, and technologies used. Clicking on a project card opens a modal with in-depth information.
 
@@ -115,8 +119,12 @@ To run this project locally, follow these steps:
   - The selected theme is saved and applied on subsequent visits.
 
 - **Viewing Projects**:
-  - In the Projects section, click on any project card to open a modal with detailed information about the project.
-  - The modal includes images, descriptions, technologies used, and links to live demos or repositories.
+    - In the Projects section, you can **filter projects by categories** using the category buttons located at the top of the section.
+    - Clicking on a category button dynamically updates the projects grid to display only the projects that belong to that category.
+    - The projects grid maintains consistent card sizes and layout regardless of the number of projects displayed or the device being used.
+    - Click on any project card to open a modal with detailed information about the project.
+    - The modal includes images, descriptions, technologies used, and links to live demos or repositories.
+
 
 - **Experience and Certifications**:
   - The Experience section includes a timeline of my work history.
