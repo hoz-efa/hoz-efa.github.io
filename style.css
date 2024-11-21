@@ -631,6 +631,7 @@ body.modal-active > *:not(.modal):not(.modal-overlay) {
         margin-right: 0;
         margin-top: 0; /* Reset margin-top in mobile view */
         margin-bottom: var(--spacing);
+        max-width: 800px;
     }
 
     .main-content-area {
@@ -684,6 +685,11 @@ body.modal-active > *:not(.modal):not(.modal-overlay) {
 
     .projects-grid {
         grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        width: 97%;
+        margin-bottom: calc(var(--spacing) - 3%);
     }
 
 }
