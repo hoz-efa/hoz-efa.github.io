@@ -689,7 +689,7 @@ body.modal-active > *:not(.modal):not(.modal-overlay) {
 
     .sidebar {
         width: 97%;
-        margin-bottom: calc(var(--spacing) - 3%);
+        margin-bottom: calc(var(--spacing) - 2%);
     }
 
 }
