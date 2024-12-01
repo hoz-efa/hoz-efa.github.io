@@ -50,10 +50,10 @@ Check out the live demo of the website:
 - **Experience, Awards, and Certifications**:
 
   - **Experience**: Lists my professional experience with timelines and detailed descriptions.
-  - **Awards and Recognition**: Displays my awards and recognitions in a grid format, with modals for detailed views.
-  - **Certifications** (New Feature): Added a new **Certifications** section under **Education**, showcasing my professional certifications. Clicking on a certification image opens a modal preview with details and a link to view the credential.
+  - **Certifications**: Added a new **Certifications** section under **Education**, showcasing my professional certifications. Clicking on a certification image opens a modal preview with details and a link to view the credential.
 
 - **Skills Overview**: Displays my technical and professional skills categorized for easy navigation.
+    - **Awards and Recognition**: Displays my awards and recognitions in a grid format, with modals for detailed views.
 
 - **Contact Form**: Features a contact form powered by [Web3Forms](https://web3forms.com/) that allows users to send me messages directly from the website.
 
