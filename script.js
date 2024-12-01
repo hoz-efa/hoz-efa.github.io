@@ -68,9 +68,9 @@ const content = {
                 </div>
                 <!-- Add more experience entries here if needed -->
             </div>
-            <h2>Certifications</h2>
-            <div class="projects-grid" id="certifications-grid">
-                <!-- Certification cards will be dynamically inserted here -->
+            <h2>Awards and Recognition</h2>
+            <div class="projects-grid" id="AwardsandRecognition-grid">
+                <!-- Awards and Recognition cards will be dynamically inserted here -->
             </div>
         </section>
     `,
@@ -110,6 +110,12 @@ const content = {
                 <p>Grade: <strong>71.30</strong></p>
             </div>
         </div>
+    </div>
+
+    <!-- Certifications Section -->
+    <h2>Certifications</h2>
+    <div class="projects-grid" id="certifications-grid">
+        <!-- Certification cards will be dynamically inserted here -->
     </div>
 </section>
     `,
@@ -1419,36 +1425,68 @@ const projectData = {
     },
 };
 
-// Certification data
-const certificationData = {
+// Certifications Data
+const certificationsData = {
     cert1: {
-        title: '11th NSS 2019 Oral',
-        image: 'assets/images/certifications/11thNSS2019-oral.jpg',
-        description: 'Oral presentation certification from the 11th National Students\' Symposium.',
+        title: 'Google AI Essentials',
+        image: 'assets/images/certifications/Google AI Essentials - Certificate.jpg',
+        credentialId: 'KIWTQGQAJ6BB',
+        credentialUrl: 'https://www.coursera.org/account/accomplishments/records/KIWTQGQAJ6BB',
+        description: 'Earned the Google AI Essentials certificate, which covers foundational concepts in artificial intelligence, including machine learning, neural networks, and practical applications of AI in real-world scenarios. Gained hands-on experience with AI tools and frameworks, enhancing my ability to integrate AI solutions into various projects.',
     },
     cert2: {
-        title: '11th NSS 2019 Poster',
-        image: 'assets/images/certifications/11thNSS2019-poster.jpg',
-        description: 'Poster presentation certification from the 11th National Students\' Symposium.',
+        title: 'Google Data Analytics',
+        image: 'assets/images/certifications/Google Data Analytics - Certificate.jpg',
+        credentialId: '8YU8OHP4P7ZQ',
+        credentialUrl: 'https://www.coursera.org/account/accomplishments/specialization/8YU8OHP4P7ZQ',
+        description: 'Achieved the Google Data Analytics certificate, a comprehensive program that provided in-depth knowledge of data preparation, processing, analysis, and visualization. Developed proficiency in tools like R programming, SQL, Tableau, and spreadsheets, while gaining hands-on experience in creating dashboards and crafting actionable insights. This certification strengthens my skills in making data-driven decisions and presenting clear, impactful visualizations.',
     },
     cert3: {
-        title: 'Hackathon 2022',
-        image: 'assets/images/certifications/Hackathon2022.jpg',
-        description: 'Awarded for outstanding innovation at the 2022 Tech Hackathon.',
+        title: 'Google IT Automation with Python',
+        image: 'assets/images/certifications/Google IT Automation with Python - Certificate.jpg',
+        credentialId: 'ICDWE8E20ATW',
+        credentialUrl: 'https://www.coursera.org/account/accomplishments/specialization/ICDWE8E20ATW',
+        description: 'This certificate, developed by Google, equips me with essential IT automation skills using Python, Git, and cloud technologies. I learned to automate tasks in IT support and systems administration, troubleshoot complex problems, and apply configuration management at scale. The program strengthened my ability to use Git and GitHub, debug issues, and automate processes to streamline IT operations, preparing me for advanced roles like IT Support Specialist or Junior Systems Administrator.',
     },
     cert4: {
+        title: 'Google Cybersecurity',
+        image: 'assets/images/certifications/Google Cybersecurity - Certificate.jpg',
+        credentialId: 'TR3CS910BTQ7',
+        credentialUrl: 'https://www.coursera.org/account/accomplishments/specialization/TR3CS910BTQ7',
+        description: 'Earned the Google Cybersecurity certificate, which covers foundational concepts in cybersecurity, including managing security risks, detecting and mitigating threats, and automating tasks using Python. Gained hands-on experience with tools like Linux, SQL, and SIEM, enhancing my ability to protect networks, devices, and data in real-world scenarios.',
+    },
+};
+
+// Awards and Recognition
+const AwardsandRecognitionData = {
+    ar1: {
+        title: '11th NSS 2019 Oral',
+        image: 'assets/images/awards and recognition/11thNSS2019-oral.jpg',
+        description: 'Oral presentation certification from the 11th National Students\' Symposium.',
+    },
+    ar2: {
+        title: '11th NSS 2019 Poster',
+        image: 'assets/images/awards and recognition/11thNSS2019-poster.jpg',
+        description: 'Poster presentation certification from the 11th National Students\' Symposium.',
+    },
+    ar3: {
+        title: 'Hackathon 2022',
+        image: 'assets/images/awards and recognition/Hackathon2022.jpg',
+        description: 'Awarded for outstanding innovation at the 2022 Tech Hackathon.',
+    },
+    ar4: {
         title: 'PB EH Certification',
-        image: 'assets/images/certifications/PB-EH.jpg',
+        image: 'assets/images/awards and recognition/PB-EH.jpg',
         description: 'Certification in Ethical Hacking from PB.',
     },
-    cert5: {
+    ar5: {
         title: 'PB IOT Certification',
-        image: 'assets/images/certifications/PB-IOT.jpg',
+        image: 'assets/images/awards and recognition/PB-IOT.jpg',
         description: 'Certification in Internet of Things from PB.',
     },
-    cert6: {
+    ar6: {
         title: 'SSIP 2019',
-        image: 'assets/images/certifications/SSIP-2019.jpg',
+        image: 'assets/images/awards and recognition/SSIP-2019.jpg',
         description: 'Student Startup and Innovation Policy certification from 2019.',
     },
 };
@@ -1500,14 +1538,14 @@ function openProjectModal(projectId) {
     }
 }
 
-// Function to open certification modal
-function openCertificationModal(certId) {
-    const certDetails = certificationData[certId];
-    if (certDetails) {
+// Function to open Awards and Recognition modal
+function openAwardsandRecognitionModal(arId) {
+    const arDetails = AwardsandRecognitionData[arId];
+    if (arDetails) {
         document.getElementById('modal-content').innerHTML = `
-            <h2>${certDetails.title}</h2>
-            <img src="${certDetails.image}" alt="${certDetails.title}" style="display: block; margin: 0 auto; width: 80%; max-width: 100%; height: auto;">
-            <p>${certDetails.description}</p>
+            <h2>${arDetails.title}</h2>
+            <img src="${arDetails.image}" alt="${arDetails.title}" style="display: block; margin: 0 auto; width: 80%; max-width: 100%; height: auto;">
+            <p>${arDetails.description}</p>
         `;
         document.getElementById('project-modal').classList.add('active');
         document.getElementById('modal-overlay').classList.add('active');
@@ -1523,12 +1561,38 @@ function openCertificationModal(certId) {
     }
 }
 
-// Function to close project or certification modal
+// Function to close project or Awards and Recognition modal
 function closeProjectModal() {
     document.getElementById('project-modal').classList.remove('active');
     document.getElementById('modal-overlay').classList.remove('active');
     document.body.classList.remove('modal-active');
 }
+
+// Function to open Certification modal
+function openCertificationModal(certId) {
+    const certDetails = certificationsData[certId];
+    if (certDetails) {
+        document.getElementById('modal-content').innerHTML = `
+            <h2>${certDetails.title}</h2>
+            <img src="${certDetails.image}" alt="${certDetails.title}" style="display: block; margin: 0 auto; width: 80%; max-width: 100%; height: auto;">
+            <p>${certDetails.description}</p>
+            <p><strong>Credential ID:</strong> ${certDetails.credentialId}</p>
+            <p><a class="my-link" href="${certDetails.credentialUrl}" target="_blank">View Credential</a></p>
+        `;
+        document.getElementById('project-modal').classList.add('active');
+        document.getElementById('modal-overlay').classList.add('active');
+        document.body.classList.add('modal-active');
+
+        // Reset scroll position after the modal is rendered
+        setTimeout(() => {
+            const modalContentElement = document.querySelector('.modal-content');
+            if (modalContentElement) {
+                modalContentElement.scrollTop = 0;
+            }
+        }, 0);
+    }
+}
+
 
 // Function to show popup messages
 function showPopup(message, type) {
@@ -1628,9 +1692,14 @@ window.onload = function () {
                 initializeProjectsSection();
             }
 
-            // Initialize certifications when loading experience section
+            // Initialize Awards and Recognition when loading experience section
             if (section === 'experience') {
-                initializeCertificationCards();
+                initializeAwardsandRecognitionCards();
+            }
+
+            // Modify your navigation event listener
+            if (section === 'education') {
+                initializeCertificationsSection();
             }
         });
     });
@@ -1676,30 +1745,30 @@ function setGridColumns() {
     }
 }
 
-// Function to initialize certification card click events
-function initializeCertificationCards() {
-    // Populate the certifications grid
-    const certificationsContainer = document.getElementById('certifications-grid');
-    certificationsContainer.innerHTML = Object.keys(certificationData).map(certId => {
-        const cert = certificationData[certId];
+// Function to initialize Awards and Recognition card click events
+function initializeAwardsandRecognitionCards() {
+    // Populate the Awards and Recognition grid
+    const AwardsandRecognitionContainer = document.getElementById('AwardsandRecognition-grid');
+    AwardsandRecognitionContainer.innerHTML = Object.keys(AwardsandRecognitionData).map(arId => {
+        const ar = AwardsandRecognitionData[arId];
         return `
-            <div class="project-card card" data-cert-id="${certId}">
-                <img src="${cert.image}" alt="${cert.title}">
-                <h3>${cert.title}</h3>
+            <div class="project-card card" data-ar-id="${arId}">
+                <img src="${ar.image}" alt="${ar.title}">
+                <h3>${ar.title}</h3>
             </div>
         `;
     }).join('');
 
-    // Add click event listeners to certification cards
-    document.querySelectorAll('.project-card[data-cert-id]').forEach((card) => {
+    // Add click event listeners to Awards and Recognition cards
+    document.querySelectorAll('.project-card[data-ar-id]').forEach((card) => {
         card.addEventListener('click', function () {
-            const certId = this.getAttribute('data-cert-id');
-            openCertificationModal(certId);
+            const arId = this.getAttribute('data-ar-id');
+            openAwardsandRecognitionModal(arId);
         });
     });
 }
 
-// Project and certification modal functionality
+// Project and Awards and Recognition modal functionality
 document.addEventListener('click', function (e) {
     if (e.target && (e.target.matches('.close-button') || e.target.matches('.modal-overlay'))) {
         closeProjectModal();
@@ -1803,6 +1872,31 @@ function initializeProjectsSection() {
 window.addEventListener('resize', function() {
     setGridColumns();
 });
+
+// Function to initialize Certifications section
+function initializeCertificationsSection() {
+    const certificationsContainer = document.getElementById('certifications-grid');
+    if (certificationsContainer) {
+        certificationsContainer.innerHTML = Object.keys(certificationsData).map(certId => {
+            const cert = certificationsData[certId];
+            return `
+                <div class="project-card card">
+                    <img src="${cert.image}" alt="${cert.title}" data-cert-id="${certId}" style="width: 100%; height: auto; border-radius: 15px; object-fit: cover; cursor: pointer;">
+                    <h3 style="text-align: center;">${cert.title}</h3>
+                    <p style="font-size: 70%; text-align: center;"><a class="my-link" href="${cert.credentialUrl}" target="_blank">(Click to view credentials)</a></p>
+                </div>
+            `;
+        }).join('');
+
+        // Add click event listeners to certification images only
+        document.querySelectorAll('.project-card img[data-cert-id]').forEach((img) => {
+            img.addEventListener('click', function () {
+                const certId = this.getAttribute('data-cert-id');
+                openCertificationModal(certId);
+            });
+        });
+    }
+}
 
 // Sync with system changes (Theme switching logic)
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', ({ matches: isDark }) => {
