@@ -55,14 +55,14 @@ const content = {
                 <div class="timeline-item">
                     <div class="timeline-content card">
                         <h3>Data Analyst @ Broadsy Technologies</h3> <!-- , Ahmedabad, Gujarat, India (Add this later) -->
-                        <span>Jul 2021 - Apr 2023</span>
+                        <span>Jul 2021 - Apr 2023 <a href="assets/Broadsy Experience Letter.pdf" download="Broadsy Experience Letter.pdf" target="_blank" style="text-decoration: none;">ㅤ ㅤㅤ ㅤ</a></span>
                         <p>At Broadsy Technologies, I served as a Data Analyst specializing in transforming complex datasets into actionable insights and developing AI-powered solutions for clients. My role involved data analysis, AI application development, and cross-functional collaboration. I conducted comprehensive data analyses to inform strategic decision-making and developed interactive dashboards using Tableau and Plotly, enhancing stakeholder data visibility. By optimizing data processing tasks, I achieved a 25% reduction in data processing time. I collaborated with the AI Engineering team to develop AI-driven applications, including chatbots and product recommendation systems, which improved client sales forecasting accuracy by 15% and increased customer engagement by 30% through NLP features.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-content card">
                         <h3>Web Development Intern @ WeTheDevelopers</h3> <!-- , Rajkot, Gujarat, India (Add this later) -->
-                        <span>Jan 2021 - Jun 2021</span>
+                        <span>Jan 2021 - Jun 2021 <a href="assets/WeTheDecelopers Experience Letter.pdf" download="WeTheDecelopers Experience Letter.pdf" target="_blank" style="text-decoration: none;">ㅤ ㅤㅤ ㅤ</a></span>
                         <p>During my Bachelor's degree in Computer Applications at Christ College Rajkot, I completed a six-month internship at WeTheDevelopers, a company specializing in website design, custom programming, and site maintenance. I was actively involved in web development and database-related applications, successfully developing web assignments that showcased my skills in front-end and back-end technologies. This hands-on experience allowed me to apply my academic knowledge to real-world projects, deepening my understanding of web technologies and database management systems.</p>
                     </div>
                 </div>
