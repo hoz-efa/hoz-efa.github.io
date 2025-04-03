@@ -48,17 +48,19 @@ const content = {
             </div>
         </section>
     `,
-    experience: `
-        <section id="experience" class="content-section">
-            <h2>Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
+    /*
+<div class="timeline-item">
                     <div class="timeline-content card">
                         <h3>Data Analyst @ Broadsy Technologies</h3> <!-- , Ahmedabad, Gujarat, India (Add this later) -->
                         <span>Jul 2021 - Apr 2023 <a href="assets/Broadsy Experience Letter.pdf" download="Broadsy Experience Letter.pdf" target="_blank" style="text-decoration: none;">ㅤ ㅤㅤ ㅤ</a></span>
                         <p>At Broadsy Technologies, I served as a Data Analyst specializing in transforming complex datasets into actionable insights and developing AI-powered solutions for clients. My role involved data analysis, AI application development, and cross-functional collaboration. I conducted comprehensive data analyses to inform strategic decision-making and developed interactive dashboards using Tableau and Plotly, enhancing stakeholder data visibility. By optimizing data processing tasks, I achieved a 25% reduction in data processing time. I collaborated with the AI Engineering team to develop AI-driven applications, including chatbots and product recommendation systems, which improved client sales forecasting accuracy by 15% and increased customer engagement by 30% through NLP features.</p>
                     </div>
                 </div>
+    */
+    experience: `
+        <section id="experience" class="content-section">
+            <h2>Experience</h2>
+            <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-content card">
                         <h3>Web Development Intern @ WeTheDevelopers</h3> <!-- , Rajkot, Gujarat, India (Add this later) -->
