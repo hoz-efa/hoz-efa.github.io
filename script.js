@@ -144,103 +144,135 @@ const content = {
     `,
     skills: `
         <section id="skills" class="content-section">
-            <h2>Skills and Expertise</h2>
-            
-            <!-- Core Technical Skills -->
-            <div class="skills-category">
-                <hr style="height:2px;border-width:0;color: var(--text-color);background-color:var(--text-color)">
-                <h4 align="center">Core Technical Skills</h3>
-
-                <!-- Programming Languages -->
-                <strong>Programming Languages</strong>
-                <ul class="skills-list">
-                    <li>Python</li>
-                    <li>JavaScript</li>
-                    <li>Java</li>
-                    <li>C++</li>
-                    <li>SQL</li>
-                </ul>
-
-                <!-- Web Development -->
-                <strong>Web Development</strong>
-                <ul class="skills-list">
-                    <li>HTML5/CSS3</li>
-                    <li>Django/Flask</li>
-                </ul>
-
-                <!-- Data Science & ML -->
-                <strong>Data Science & Machine Learning</strong>
-                <ul class="skills-list">
-                    <li>Pandas, NumPy, Scikit-learn</li>
-                    <li>TensorFlow, PyTorch</li>
-                    <li>Natural Language Processing</li>
-                    <li>Computer Vision (OpenCV)</li>
-                    <li>Deep Learning (CNN, RNN, Transformers)</li>
-                </ul>
-
-                <!-- Databases -->
-                <strong>Database Technologies</strong>
-                <ul class="skills-list">
-                    <li>MySQL, PostgreSQL</li>
-                    <li>MongoDB</li>
-                    <li>Database Design & Optimization</li>
-                    <li>ETL Processes</li>
-                </ul>
-            </div>
-
-            <!-- Cloud & Tools -->
-            <div class="skills-category">
-                <hr style="height:2px;border-width:0;color: var(--text-color);background-color:var(--text-color)">
-                <h4 align="center">Cloud & Development Tools</h3>
-
-                <!-- Cloud Services -->
-                <strong>Cloud Services</strong>
-                <ul class="skills-list">
-                    <li>AWS (EC2, S3, Lambda, SageMaker)</li>
-                    <li>Docker</li>
-                    <li>CI/CD Pipelines</li>
-                </ul>
-
-                <!-- Development Tools -->
-                <strong>Development Tools</strong>
-                <ul class="skills-list">
-                    <li>Git/GitHub</li>
-                    <li>VS Code, PyCharm</li>
-                    <li>Jupyter Notebooks</li>
-                    <li>Postman</li>
-                </ul>
-
-                <!-- Analytics & Visualization -->
-                <strong>Analytics & Visualization</strong>
-                <ul class="skills-list">
-                    <li>Tableau</li>
-                    <li>Power BI</li>
-                    <li>Matplotlib/Seaborn</li>
-                </ul>
-            </div>
-
-            <!-- Professional Skills -->
-            <div class="skills-category">
-                <hr style="height:2px;border-width:0;color: var(--text-color);background-color:var(--text-color)">
-                <h4 align="center">Professional Skills</h3>
-
-                <!-- Project Management -->
-                <strong>Project Management</strong>
-                <ul class="skills-list">
-                    <li>Agile/Scrum Methodology</li>
-                    <li>Technical Leadership</li>
-                    <li>Project Planning & Execution</li>
-                </ul>
-
-                <!-- Soft Skills -->
-                <strong>Soft Skills</strong>
-                <ul class="skills-list">
-                    <li>Problem Solving</li>
-                    <li>Technical Communication</li>
-                    <li>Team Collaboration</li>
-                </ul>
-            </div>
-        </section>
+        <h2>Skills and Expertise</h2>
+        
+        <!-- Core Technical Skills -->
+        <div class="skills-category">
+            <hr style="height:2px;border-width:0;color: var(--text-color);background-color:var(--text-color)">
+            <h4 align="center">Core Technical Skills</h4>
+    
+            <!-- Programming Languages -->
+            <strong>Programming Languages</strong>
+            <ul class="skills-list">
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>Java</li>
+                <li>C++</li>
+                <li>SQL</li>
+            </ul>
+    
+            <!-- Web Development -->
+            <strong>Web Development</strong>
+            <ul class="skills-list">
+                <li>HTML5/CSS3</li>
+                <li>Django/Flask</li>
+            </ul>
+    
+            <!-- Data Science & ML -->
+            <strong>Data Science & Machine Learning</strong>
+            <ul class="skills-list">
+                <li>Pandas, NumPy, Scikit-learn</li>
+                <li>TensorFlow, PyTorch</li>
+                <li>Natural Language Processing</li>
+                <li>Computer Vision (OpenCV)</li>
+                <li>Deep Learning (CNN, RNN, Transformers)</li>
+            </ul>
+    
+            <!-- Databases -->
+            <strong>Database Technologies</strong>
+            <ul class="skills-list">
+                <li>MySQL, PostgreSQL</li>
+                <li>MongoDB</li>
+                <li>Database Design & Optimization</li>
+                <li>ETL Processes</li>
+            </ul>
+        </div>
+    
+        <!-- Technical Support & Device Repair -->
+        <div class="skills-category">
+            <hr style="height:2px;border-width:0;color: var(--text-color);background-color:var(--text-color)">
+            <h4 align="center">Technical Support & Device Repair</h4>
+    
+            <!-- Hardware Repair -->
+            <strong>Hardware Repair</strong>
+            <ul class="skills-list">
+                <li>Mobile Screen (LCD/OLED) Replacement</li>
+                <li>Battery Replacement</li>
+                <li>Charging Port Repair</li>
+                <li>Internal Component Troubleshooting</li>
+                <li>Laptop Hardware Diagnostics</li>
+                <li>Power Module & Internal Assembly Repair</li>
+            </ul>
+    
+            <!-- Software Troubleshooting -->
+            <strong>Software & System Support</strong>
+            <ul class="skills-list">
+                <li>Operating System Installation (Windows, Android)</li>
+                <li>Firmware Flashing & System Updates</li>
+                <li>Virus & Malware Removal</li>
+                <li>Device Diagnostics & Performance Optimization</li>
+                <li>Data Backup & Recovery</li>
+            </ul>
+    
+            <!-- Technical Support -->
+            <strong>Technical Support</strong>
+            <ul class="skills-list">
+                <li>Network & Internet Troubleshooting</li>
+                <li>Customer Issue Documentation</li>
+                <li>Remote & On-site Technical Support</li>
+                <li>Technical Consultation</li>
+                <li>Quality Assurance & Post-Repair Testing</li>
+            </ul>
+        </div>
+    
+        <!-- Cloud & Tools -->
+        <div class="skills-category">
+            <hr style="height:2px;border-width:0;color: var(--text-color);background-color:var(--text-color)">
+            <h4 align="center">Cloud & Development Tools</h4>
+    
+            <!-- Cloud Services -->
+            <strong>Cloud Services</strong>
+            <ul class="skills-list">
+                <li>AWS (EC2, S3, Lambda, SageMaker)</li>
+                <li>Docker</li>
+                <li>CI/CD Pipelines</li>
+            </ul>
+    
+            <!-- Development Tools -->
+            <strong>Development Tools</strong>
+            <ul class="skills-list">
+                <li>Git/GitHub</li>
+                <li>VS Code, PyCharm</li>
+                <li>Jupyter Notebooks</li>
+                <li>Postman</li>
+            </ul>
+    
+            <!-- Analytics & Visualization -->
+            <strong>Analytics & Visualization</strong>
+            <ul class="skills-list">
+                <li>Tableau</li>
+                <li>Power BI</li>
+                <li>Matplotlib/Seaborn</li>
+            </ul>
+        </div>
+    
+        <!-- Professional Skills -->
+        <div class="skills-category">
+            <hr style="height:2px;border-width:0;color: var(--text-color);background-color:var(--text-color)">
+            <h4 align="center">Professional Skills</h4>
+    
+            <strong>Project & Communication</strong>
+            <ul class="skills-list">
+                <li>Problem Solving</li>
+                <li>Technical Communication</li>
+                <li>Customer Service</li>
+                <li>Time Management</li>
+                <li>Multitasking</li>
+                <li>Active Listening</li>
+                <li>Team Collaboration</li>
+            </ul>
+        </div>
+    </section>
     `,
 /*    skills: `
         <section id="skills" class="content-section">
@@ -1926,4 +1958,5 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', ({ 
     theme.value = isDark ? 'dark' : 'light';
     setPreference();
 });
+
 
