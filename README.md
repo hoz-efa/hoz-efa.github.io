@@ -251,7 +251,7 @@ Feel free to reach out to me through any of the following channels:
 
 - **Email**: [hozefapatel1999@gmail.com](mailto:hozefapatel1999@gmail.com)
 - **LinkedIn**: [linkedin.com/in/hozefa-patel](https://linkedin.com/in/hozefa-patel)
-- **Telegram**: [t.me/max_parker](https://t.me/max_parker)
+- **Telegram**: [t.me/max_parker](https://t.me/maxparkerr)
 
 ---
 
