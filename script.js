@@ -63,8 +63,29 @@ const content = {
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-content card">
+                        <h3>Mobile & Laptop Repair Technician @ Phones & Beyond</h3>
+                        <span>Oct 2025 - Present · Waterloo, Ontario, Canada</span>
+                        <p>Working as a Contract Full-time Mobile & Laptop Repair Technician, responsible for diagnosing and repairing smartphones and laptops with both hardware and software-related faults. Perform component-level repairs including screen replacements, battery replacements, charging port repairs, and internal hardware servicing. Conduct operating system installations, system updates, and software troubleshooting to ensure optimal device performance. Provide technical consultation to customers, explain repair procedures, and maintain high standards of service quality and efficiency.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content card">
+                        <h3>Mobile Repair Technician @ Tech Clinic</h3>
+                        <span>Nov 2025 - Present · Regional Municipality of Waterloo, Ontario, Canada</span>
+                        <p>Working on a Casual / On-call basis, responsible for performing detailed fault diagnostics on mobile devices and laptops using systematic troubleshooting techniques. Repair and replace hardware components including displays, batteries, power modules, charging ports, and internal assemblies. Resolve software-related issues such as operating system installation, firmware flashing, system updates, and malware removal. Conduct comprehensive post-repair diagnostics, quality assurance testing, and provide technical support to ensure optimal device performance and customer satisfaction.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content card">
+                        <h3>Technical Support Representative @ Rogers Communications</h3>
+                        <span>Dec 2024 - Aug 2025 · 9 mos</span>
+                        <p>Worked as a full-time Technical Support Representative in a hybrid environment, providing advanced troubleshooting and technical assistance for network, Internet, cable, satellite, digital phone, and computer-related issues. Diagnosed and resolved customer technical concerns through systematic problem-solving while maintaining detailed documentation of interactions and solutions. Delivered high-quality customer service by effectively communicating technical information, educating customers on products and services, and identifying opportunities to enhance service performance. Collaborated closely with internal teams to ensure efficient issue resolution and customer satisfaction.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content card">
                         <h3>Web Development Intern @ WeTheDevelopers</h3> <!-- , Rajkot, Gujarat, India (Add this later) -->
-                        <span>Jan 2021 - Jun 2021 <a href="assets/WeTheDecelopers Experience Letter.pdf" download="WeTheDecelopers Experience Letter.pdf" target="_blank" style="text-decoration: none;">ㅤ ㅤㅤ ㅤ</a></span>
+                        <span>Jan 2021 - Jun 2021 · 6 mos <a href="assets/WeTheDecelopers Experience Letter.pdf" download="WeTheDecelopers Experience Letter.pdf" target="_blank" style="text-decoration: none;">ㅤ ㅤㅤ ㅤ</a></span>
                         <p>During my Bachelor's degree in Computer Applications at Christ College Rajkot, I completed a six-month internship at WeTheDevelopers, a company specializing in website design, custom programming, and site maintenance. I was actively involved in web development and database-related applications, successfully developing web assignments that showcased my skills in front-end and back-end technologies. This hands-on experience allowed me to apply my academic knowledge to real-world projects, deepening my understanding of web technologies and database management systems.</p>
                     </div>
                 </div>
@@ -1905,3 +1926,4 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', ({ 
     theme.value = isDark ? 'dark' : 'light';
     setPreference();
 });
+
